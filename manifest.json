@@ -1,0 +1,22 @@
+{
+  "name": "weather-agent",
+  "version": "1.0.0",
+  "description": "Get current weather data for a given city using OpenWeatherMap API.",
+  "authors": ["El-King"],
+  "entry_point": "src/index.py",
+  "server": {
+    "command": "python",
+    "args": ["-u", "src/index.py"]
+  },
+  "tools": {
+    "get_weather": {
+      "description": "Fetch current weather data for a given city name.",
+      "parameters": {
+        "city": {
+          "type": "string",
+          "description": "City name (e.g. Istanbul, Ankara)"
+        }
+      }
+    }
+  } 
+}
